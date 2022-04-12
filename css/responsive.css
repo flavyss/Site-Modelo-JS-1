@@ -1,0 +1,177 @@
+@media screen and (max-width: 850px){
+    /*ocultação do menu desktop*/
+    header .menuDesktop{
+        display: none;
+    }
+
+    /*Menu Mobile*/
+    header .menuMobile{
+        display: block;
+        line-height: 58px;
+        color: white;
+        float: right;
+    }
+
+    header .menuMobile h2{
+        color: black;
+        cursor: pointer;
+    }
+
+    header .menuMobile ul > h2{
+        cursor: pointer;
+        color: white;
+    }
+
+    header .menuMobile ul{
+        position: fixed;
+        padding: 15px 0;
+        left: 0;
+        top: 0;
+        height: 100%;
+        z-index: 244;
+        text-align: center;
+        list-style: none;
+        transition: 1s;
+        background-color: black;
+        width: 0;
+        overflow: hidden;
+    }
+
+    header .menuMobile ul li{
+        font-size: 20px;
+        margin: 8px 0;
+    }
+
+    header .menuMobile ul li a{
+        color: rgb(0, 179, 134);
+        text-decoration: none;
+    }
+
+    header .menuMobile ul li .perfil{
+        border: 1px solid rgb(0, 125, 228);
+        color: rgb(0, 125, 228);
+        border-radius: 10px;
+        padding: 5px 10px;
+    }
+
+    header .menuMobile ul li .select{
+        color: blue;
+    }
+
+    header .menuMobile ul li a:hover{
+        color: blue;
+        font-size: 22px;
+    }
+
+    header .menuMobile ul .changeColor{
+        text-align: center;
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    section.newsletter form input[type='text'],
+    section.newsletter form input[type='email']{
+        width: 90%;
+        margin: 15px 0;
+    }
+    section.newsletter form input[type='text']:focus,
+    section.newsletter form input[type='email']:focus{
+        border: 1px solid rgb(0, 199, 133);
+        width: 100%;
+        transition: 1s;
+    }
+
+    section.newsletter form input[type='submit']{
+        width: 50%;
+        margin-top: 25px;
+    }
+    
+    section.cont-serv .service-wraper .service-content{
+        width: 100%;
+        padding: 25px 0;
+        float: none;
+    }
+    
+    section.cont-serv .service-wraper .service-content .img-serv{
+        width: 100%;
+        height: 50vh;
+    }
+    
+    section.cont-serv .service-wraper .service-content .text-serv{
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    section form{
+        width: 100%;
+        margin: 30px auto;
+        border: 1px solid;
+    
+    }
+    
+}
+
+@media screen and (max-width: 610px){
+
+    section.banner .text{
+        width: 90%;
+        padding-top: 15%;
+    }
+    
+    section.banner .text h2{
+        font-size: 40px;
+    }
+    
+    section.banner .text p{
+        font-size: 16px;
+    }
+    
+    section.noticias .noticias-container .noticias-wraper{
+        width: 100%;
+        float: none;
+        padding:30px; 
+    }
+
+    section.noticias .noticias-container .noticias-wraper .noticia-img{
+        width: 70%;
+        height: 100%;
+        margin: 0 auto;
+    }
+    
+
+}
+
+@media screen and (max-width: 375px){
+
+    header .logo{
+        float: left;
+    }
+    
+    header .logo h2{
+        font-size: 32px;
+        font-variant: small-caps;
+        font-style: italic;
+        line-height: 55px;
+    
+    }
+
+    section.banner .text{
+        width: 100%;
+        padding: 17% 4%;
+    }
+    
+    section.banner .text h2{
+        font-size: 30px;
+    }
+    
+    section.banner .text p{
+        font-size: 16px;
+    }
+
+    section.noticias .noticias-container .noticias-wraper .noticia-img{
+        width: 90%;
+        height: 100%;
+        margin: 0 auto;
+    }
+
+}

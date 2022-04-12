@@ -1,0 +1,37 @@
+.color1{
+    background-color: #161616;
+    transition: 1s;
+}
+
+.color2{
+    background-color: white;
+    transition: 1s;
+}
+
+.aparece{
+    width: 45% !important;
+}
+
+.aparece2{
+    transition: 1s;
+    height: 150px !important;
+}
+
+.aparece3{
+    display: block !important; 
+}
+.aparece4{
+    height: 50% !important;
+}
+
+@media screen and (max-width: 610px) {
+    .aparece{
+        width: 60% !important;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .aparece{
+        width:100% !important;
+    }
+}

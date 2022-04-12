@@ -1,0 +1,251 @@
+/*Reset Basico da pagina*/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    /*font-family: 'Oswald', sans-serif;*/
+}
+
+
+/*Classes Globais do site*/
+
+.container{
+    width: 100%;
+    max-width: 1350px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+.clear{
+    clear: both;
+}
+
+
+/*Ocultação do menu-Mobile*/
+
+header .menuMobile{
+    display: none;
+}
+
+/*Inicio do site*/
+
+header{
+    padding: 8px 0;
+}
+
+/*Logo do site*/
+
+header .logo{
+    float: left;
+}
+
+header .logo h2{
+    font-size: 40px;
+    font-variant: small-caps;
+    font-style: italic;
+
+}
+
+header .logo h2 a{
+    color: greenyellow;
+    text-decoration: none;
+}
+
+/*Menu Desktop*/
+
+header .menuDesktop{
+    float: right;
+}
+
+header .menuDesktop ul{
+    list-style: none;
+    line-height: 60px;
+}
+
+header .menuDesktop ul li{
+    float: left;
+    margin: 0 10px;
+    font-size: 18px;
+}
+
+header .menuDesktop ul li a{
+    color: rgb(0, 179, 134);
+    text-decoration: none;
+}
+
+header .menuDesktop ul li .perfil{
+    border: 1px solid rgb(0, 125, 228);
+    color: rgb(0, 125, 228);
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+header .menuDesktop ul li .select{
+    color: blue;
+}
+
+header .menuDesktop ul li a:hover{
+    color: blue;
+    font-size: 20px;
+}
+
+/*Mudar de cor*/
+
+header .changeColor{
+    float: right;
+    padding: 0 15px;
+    line-height: 60px;
+}
+
+header .changeColor h2{
+    color: rgb(0, 125, 228);
+    cursor: pointer;
+}
+
+/*Serviços*/
+
+section.services{
+    width: 100%;
+    padding: 15px 0;
+    background-color: black;
+    text-align: center;
+}
+
+section.services .border{
+    width: 150px;
+    height: 1px;
+    background-color: aliceblue;
+    margin: 0 auto;
+}
+
+section.services h2{
+    font-size: 40px;
+    font-weight: lighter;
+    font-variant: small-caps;
+    font-style: italic;
+    letter-spacing: 2px;
+    color: aqua;
+}
+
+section.services p{
+    width: 90%;
+    color: white;
+    margin: 20px auto;
+}
+
+section.cont-serv .service-wraper{
+    width: 100%;
+    padding: 25px 0;
+}
+
+section.cont-serv .service-wraper .service-content{
+    width: calc(100% / 2);
+    float: left;
+    text-align: center;
+    padding: 15px;
+}
+
+section.cont-serv .service-wraper .service-content .img-serv{
+    width: 70%;
+    height: 50vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+}
+
+section.cont-serv .service-wraper .service-content .text-serv{
+    width: 70%;
+    margin: 0 auto;
+}
+
+section.cont-serv .service-wraper .service-content .text-serv h2{
+    margin-top: 5px;
+    font-size: 35px;
+    font-weight: lighter;
+    font-variant: small-caps;
+    font-style: italic;
+    letter-spacing: 2px;
+}
+
+section.cont-serv .service-wraper .service-content .text-serv p{
+    text-align: justify;
+    padding: 5px 0;
+}
+
+section.cont-serv .service-wraper .service-content .text-serv h3{
+    margin-top: 5px;
+    font-size: 20px;
+    font-variant: small-caps;
+    font-style: italic;
+    letter-spacing: 2px;
+    padding: 8px 0;
+}
+
+section.cont-serv .service-wraper .service-content .text-serv button{
+    margin-top: 5px;
+    font-size: 16px;
+    width: 100%;
+    cursor: pointer;
+    font-variant: small-caps;
+    font-style: italic;
+    letter-spacing: 2px;
+    padding: 8px 0;
+}
+
+.carrinho{
+    position: fixed;
+    left: 3%;
+    top: 5%;
+    padding: 10px;
+    border-radius: 55px;
+    color: rgb(2, 102, 92);
+    border: 1px solid;
+    cursor: pointer;
+    display: none;
+}
+
+.carrinho .number{
+    text-align: center;
+}
+
+.carrinho .content-car .campo{
+    padding: 40px 0;
+    color: aliceblue;
+}
+
+.carrinho .content-car {
+    width: 50%;
+    height: 0%;
+    overflow: hidden;
+    transition: 1s;
+    position: fixed;
+    left: 25%;
+    top: 15%;
+    border-radius: 5px;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+}
+
+.carrinho .content-car button{
+    margin-top: 20%;
+    width: 50%;
+    padding: 10px;
+    z-index: 999;
+    color: aqua;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color:rgb(49, 4, 133);
+}
+
+footer{
+    padding: 15px 8px;
+    text-align: center;
+}

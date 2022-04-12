@@ -1,0 +1,206 @@
+/*Reset Basico da pagina*/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    /*font-family: 'Oswald', sans-serif;*/
+}
+
+
+/*Classes Globais do site*/
+
+.container{
+    width: 100%;
+    max-width: 1350px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+.clear{
+    clear: both;
+}
+
+
+/*Ocultação do menu-Mobile*/
+
+header .menuMobile{
+    display: none;
+}
+
+/*Inicio do site*/
+
+header{
+    padding: 8px 0;
+}
+
+/*Logo do site*/
+
+header .logo{
+    float: left;
+}
+
+header .logo h2{
+    font-size: 40px;
+    font-variant: small-caps;
+    font-style: italic;
+
+}
+
+header .logo h2 a{
+    color: greenyellow;
+    text-decoration: none;
+}
+
+/*Menu Desktop*/
+
+header .menuDesktop{
+    float: right;
+}
+
+header .menuDesktop ul{
+    list-style: none;
+    line-height: 60px;
+}
+
+header .menuDesktop ul li{
+    float: left;
+    margin: 0 10px;
+    font-size: 18px;
+}
+
+header .menuDesktop ul li a{
+    color: rgb(0, 179, 134);
+    text-decoration: none;
+}
+
+header .menuDesktop ul li .perfil{
+    border: 1px solid rgb(0, 125, 228);
+    color: rgb(0, 125, 228);
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+header .menuDesktop ul li .select{
+    color: blue;
+}
+
+header .menuDesktop ul li a:hover{
+    color: blue;
+    font-size: 20px;
+}
+
+/*Mudar de cor*/
+
+header .changeColor{
+    float: right;
+    padding: 0 15px;
+    line-height: 60px;
+}
+
+header .changeColor h2{
+    color: rgb(0, 125, 228);
+    cursor: pointer;
+}
+
+
+section{
+    width: 100%;
+    text-align: center;
+}
+
+section .text{
+    width: 100%;
+    padding: 15px 0;
+    background-color: black;
+}
+
+
+section .text .border{
+    width: 150px;
+    height: 1px;
+    background-color: aliceblue;
+    margin: 0 auto;
+}
+
+section .text h2{
+    font-size: 40px;
+    font-weight: lighter;
+    font-variant: small-caps;
+    font-style: italic;
+    letter-spacing: 2px;
+    color: aqua;
+}
+
+section .text p{
+    width: 90%;
+    color: white;
+    margin: 20px auto;
+}
+
+section form{
+    width: 50%;
+    margin: 30px auto;
+    border: 1px solid;
+
+}
+
+section form h2{
+    font-size: 40px;
+    font-variant: small-caps;
+    font-style: italic;
+    letter-spacing: 2px;
+    position: relative;
+    top: -30px;
+    background-color: white;
+    width: 200px;
+    margin: 0 auto;
+}
+section form div{
+    padding: 10px 0;
+}
+section form p{
+    width: 90%;
+    margin: 0 auto;
+    padding: 5px 0; 
+    text-align: justify;
+}
+
+section form input[type='text'],
+section form input[type='email']{
+    width: 90%;
+    outline: none;
+    padding: 5px;
+}
+
+section form textarea{
+    width: 90%;
+    resize: none;
+    outline: none;
+    padding: 5px;
+}
+
+section form button{
+    width: 40%;
+    cursor: pointer;
+    padding: 5px 0;
+    font-size: 20px;
+    margin: 15px 0;
+}
+
+
+footer{
+    padding: 15px 8px;
+    text-align: center;
+}
+
+
+footer{
+    padding: 15px 8px;
+    text-align: center;
+}

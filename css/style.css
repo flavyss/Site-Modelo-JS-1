@@ -1,0 +1,320 @@
+/*Reset Basico da pagina*/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    /*font-family: 'Oswald', sans-serif;*/
+}
+
+
+/*Classes Globais do site*/
+
+.container{
+    width: 100%;
+    max-width: 1350px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+.clear{
+    clear: both;
+}
+
+
+/*Ocultação do menu-Mobile*/
+
+header .menuMobile{
+    display: none;
+}
+
+/*Inicio do site*/
+
+header{
+    padding: 8px 0;
+}
+
+/*Logo do site*/
+
+header .logo{
+    float: left;
+}
+
+header .logo h2{
+    font-size: 40px;
+    font-variant: small-caps;
+    font-style: italic;
+
+}
+
+header .logo h2 a{
+    color: greenyellow;
+    text-decoration: none;
+}
+
+/*Menu Desktop*/
+
+header .menuDesktop{
+    float: right;
+}
+
+header .menuDesktop ul{
+    list-style: none;
+    line-height: 60px;
+}
+
+header .menuDesktop ul li{
+    float: left;
+    margin: 0 10px;
+    font-size: 18px;
+}
+
+header .menuDesktop ul li a{
+    color: rgb(0, 179, 134);
+    text-decoration: none;
+}
+
+header .menuDesktop ul li .perfil{
+    border: 1px solid rgb(0, 125, 228);
+    color: rgb(0, 125, 228);
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+header .menuDesktop ul li .select{
+    color: blue;
+}
+
+header .menuDesktop ul li a:hover{
+    color: blue;
+    font-size: 20px;
+}
+
+/*Mudar de cor*/
+
+header .changeColor{
+    float: right;
+    padding: 0 15px;
+    line-height: 60px;
+}
+
+header .changeColor h2{
+    color: rgb(0, 125, 228);
+    cursor: pointer;
+}
+
+/*Sessão de Banner*/
+
+section.banner{
+    width: 100%;
+    height: 80vh;
+    position: relative;
+}
+
+section.banner .opacity{
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.705);
+}
+
+section.banner .img{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    transition: 1s;
+    opacity: 0;
+    height: 80vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+section.banner .bullets{
+    display: flex;
+    position: absolute;
+    left: 50%;
+    top: 97%;
+    z-index: 3;
+    transform:translate(-50%, -50%); 
+    padding: 15px 0;
+}
+
+section.banner .bullet{
+    width: 15px;
+    border-radius:55px;
+    margin: 0 5px;
+    cursor: pointer;
+    height: 15px;
+    background-color: rgb(0, 199, 133);
+}
+
+section.banner .select{
+    background-color: royalblue;
+}
+
+section.banner > .container{
+    position: relative;
+    z-index: 2;
+    color: white;
+}
+
+section.banner .text{
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 10%;
+    text-align: center;
+}
+
+section.banner .text h2{
+    font-size: 60px;
+    font-family: 'Oswald', sans-serif;
+    margin-top: 30px;
+    font-variant: small-caps;
+    letter-spacing: 5px;
+}
+
+section.banner .text p{
+    text-align: justify;
+    padding: 15px 0;
+    font-size: 18px;
+}
+
+/*sesso de noticias*/
+
+section.noticias{
+    width: 100%;
+    padding: 25px 0;
+    transition: 1s;
+}
+
+section.noticias h2{
+    font-weight: lighter;
+    font-variant: small-caps;
+    text-align: center;
+    font-size: 35px;
+    
+}
+
+section.noticias .noticias-container{
+    width: 100%;
+}
+
+section.noticias .noticias-container .noticias-wraper{
+    width: calc(100% / 2);
+    float: left;
+    padding:30px;
+}
+
+section.noticias .noticias-container .noticias-wraper .noticia-img{
+    width: 40%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+section.noticias .noticias-container .noticias-wraper .noticia-img img{
+    width: 100%;
+    height: 100%;
+    padding: 15px 0;
+}
+
+section.noticias .noticias-container .noticias-wraper .noticia-txt{
+    width: 90%;
+    margin: 0 auto;
+}
+
+section.noticias .noticias-container .noticias-wraper .noticia-txt h2{
+    font-size: 30px;
+    font-variant: initial;
+    padding: 0 0 15px 0;
+}
+
+section.noticias .noticias-container .noticias-wraper .noticia-txt span{
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+
+section.noticias .noticias-container .noticias-wraper .noticia-txt p{
+    text-align: justify;
+    height: 25px;
+    transition: 1s;
+    overflow: hidden;
+} 
+
+section.newsletter{
+    width: 100%;
+    padding: 20px 0;
+    background-color: black;
+    text-align: center;
+    color: white;
+}
+
+section.newsletter h2{
+    font-size: 40px;
+    font-weight: lighter;
+    font-style: italic;
+    font-variant: small-caps;
+    letter-spacing: 2px;
+}
+
+section.newsletter p {
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: justify;
+}
+
+section.newsletter form{
+    width: 100%;
+    padding: 30px 0;
+}
+
+section.newsletter form input[type='text'],
+section.newsletter form input[type='email']{
+    width: 30%;
+    padding: 8px;
+    background-color: transparent;
+    border-radius: 5555px;
+    color: rgb(0, 199, 133);
+    outline: none;
+    transition: 1s;
+    margin: 0 10px;
+    border: 1px solid rgb(0, 125, 228);
+}
+
+section.newsletter form input[type='text']:focus,
+section.newsletter form input[type='email']:focus{
+    border: 1px solid rgb(0, 199, 133);
+    width: 35%;
+    transition: 1s;
+}
+
+section.newsletter form input[type='submit']{
+    padding: 8px;
+    background-color: transparent;
+    border-radius: 5555px;
+    color: rgb(0, 199, 133);
+    outline: none;
+    transition: 1s;
+    cursor: pointer;
+    margin: 0 10px;
+    border: 1px solid rgb(0, 125, 228);
+    width: 10%;
+}
+
+section.newsletter form input[type='submit']:hover{
+    background-color: royalblue;
+    color: white;
+}
+
+footer{
+    padding: 15px 8px;
+    text-align: center;
+}
